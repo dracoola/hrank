@@ -1,0 +1,18 @@
+#import<Foundation/Foundation.h>
+
+int main(int argc, const char* argv[])
+{
+    @autoreleasepool {
+        NSInteger n;
+        scanf("%lu", &n);
+
+        for (NSInteger i = 0; i < n; i++) {
+            /*
+             * Do not use NSLog to print to stdout
+             */
+            printf("hello world\n");
+        }
+
+        return 0;
+    }
+}
