@@ -1,0 +1,2 @@
+N = gets
+1.step(N.to_i, 1) { |i| print "hello world\n" }
