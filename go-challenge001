@@ -1,0 +1,23 @@
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    times := readInt()
+    for i := 0; i < times; i++ {
+        fmt.Println("hello world")
+    }
+}
+
+func readInt() int {
+    var n int
+    _, err := fmt.Scanf("%d", &n)
+
+    if err != nil {
+        panic(err)
+    }
+
+    return n
+}
