@@ -39,9 +39,6 @@ Explanation
 
 John can match three pairs of socks.
 """
-
-
-
 #!/bin/python3
 
 import math
@@ -52,11 +49,6 @@ import sys
 
 # Complete the sockMerchant function below.
 def sockMerchant(n, ar):
-#    print(n)
-#    print(ar)
-#    arrlength = len(ar)
-#    print(arrlength)
-
     my_hash = {}
     num_pairs = 0
 
@@ -69,10 +61,10 @@ def sockMerchant(n, ar):
         else:
             my_hash[ar[indx]] = 1
 
-    print(my_hash)
-    print("Pairs", num_pairs)
+    #print(my_hash)
+    #print("Pairs", num_pairs)
+    return num_pairs
 
-"""
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
@@ -86,8 +78,7 @@ if __name__ == '__main__':
 
     fptr.close()
 
-"""
-
+'''
 my_n = 9
 my_array = "10 20 20 10 10 30 50 10 20"
 ar = list(map(int, my_array.rstrip().split()))
@@ -95,3 +86,4 @@ print(my_array)
 print(ar)
 
 sockMerchant(my_n, ar)
+'''
