@@ -52,7 +52,27 @@ import sys
 
 # Complete the sockMerchant function below.
 def sockMerchant(n, ar):
+#    print(n)
+#    print(ar)
+#    arrlength = len(ar)
+#    print(arrlength)
 
+    my_hash = {}
+    num_pairs = 0
+
+    for indx in range(n):   # instead of range(arrlength) which arrlength == n  anyhow
+        print(indx, ar[indx])
+        if ar[indx] in my_hash:
+            my_hash[ar[indx]] += 1
+            if my_hash[ar[indx]] % 2 == 0:
+                num_pairs += 1
+        else:
+            my_hash[ar[indx]] = 1
+
+    print(my_hash)
+    print("Pairs", num_pairs)
+
+"""
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
@@ -66,4 +86,12 @@ if __name__ == '__main__':
 
     fptr.close()
 
+"""
 
+my_n = 9
+my_array = "10 20 20 10 10 30 50 10 20"
+ar = list(map(int, my_array.rstrip().split()))
+print(my_array)
+print(ar)
+
+sockMerchant(my_n, ar)
